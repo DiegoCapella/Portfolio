@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Havelock</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="img/logo-white.png" alt="logo"></a>
+      </div>
+      <nav>
+        <ul>
+          <li>About</li>
+          <li>Galery</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="circle-box">
+      <svg width="410" height="410">
+        <circle r="200" cx="207" cy="207" stroke="gray" stroke-width="1px" fill="none" />
+      </svg>
+
+      <svg width="410" height="410">
+        <circle id="svgCicle" r="200" cx="207" cy="207" stroke="#fff" stroke-width="1px" fill="none" />
+      </svg>
+      <div>
+        <span id="step1"></span>
+        <span id="step2"></span>
+        <span id="step3"></span>
+        <span id="step4"></span>
+        <span id="step5"></span>
+      </div>
+      <div class="user-box" id="userBox">
+        <div class="user">
+          <img src="img/perfil-one.jpg" alt="perfil-one">
+          <h1>Amanda Havel</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora non, rerum veniam sint ipsa est.</p>
+          <div class="social-links">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="user">
+          <img src="img/perfil-two.jpg" alt="perfil-two">
+          <h1>Larissa Nonville</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora non, rerum veniam sint ipsa est.</p>
+          <div class="social-links">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="user">
+          <img src="img/perfil-three.jpg" alt="perfil-three">
+          <h1>Ingrid Brant</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora non, rerum veniam sint ipsa est.</p>
+          <div class="social-links">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="user">
+          <img src="img/perfil-four.jpg" alt="perfil-four">
+          <h1>Ana Kapur</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora non, rerum veniam sint ipsa est.</p>
+          <div class="social-links">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="user">
+          <img src="img/perfil-five.jpg" alt="perfil-five">
+          <h1>Rafaela Hanov</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora non, rerum veniam sint ipsa est.</p>
+          <div class="social-links">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+ 
+
+  <script>
+    var svgCicle = document.getElementById("svgCicle")
+    var step1 = document.getElementById("step1")
+    var step2 = document.getElementById("step2")
+    var step3 = document.getElementById("step3")
+    var step4 = document.getElementById("step4")
+    var step5 = document.getElementById("step5")
+    var main = document.getElementById("main")
+    var userBox = document.getElementById("userBox")
+    
+    main.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),url(img/bg-five.jpg)";
+
+    step1.addEventListener('click', () => {
+      svgCicle.style.strokeDashoffset = "1004";
+      main.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),url(img/bg-one.jpg)";
+      userBox.style.top = "-390px";
+    })
+
+    step2.addEventListener('click', () => {
+      svgCicle.style.strokeDashoffset = "753";
+      main.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),url(img/bg-two.jpg)";
+      userBox.style.top = "-830px";
+    })
+
+    step3.addEventListener('click', () => {
+      svgCicle.style.strokeDashoffset = "502";
+      main.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),url(img/bg-three.jpg)";
+      userBox.style.top = "-1280px";
+    })
+
+    step4.addEventListener('click', () => {
+      svgCicle.style.strokeDashoffset = "251";
+      main.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),url(img/bg-four.jpg)";
+      userBox.style.top = "-1730px";
+    })
+
+    step5.addEventListener('click', () => {
+      svgCicle.style.strokeDashoffset = "0";
+      main.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),url(img/bg-five.jpg)";
+      userBox.style.top = "70px";
+    })
+  </script>
+</body>
+</html>

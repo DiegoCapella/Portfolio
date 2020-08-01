@@ -1,0 +1,67 @@
+/* Default */
+body {
+  padding-top: 74px;
+}
+
+/* Navigation-Bar */
+.box-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05),
+              0 4px 8px 0 rgba(0, 0, 0, .08);
+}
+
+/* Advantage */
+.antitle {
+  color: black !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.icons-advantage {
+  width: 180px;
+  height: 180px;
+}
+
+/* Bloquote */
+#home-quote {
+  background-image: url(../img/home/viagem.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+#home-quote footer {
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  #home-quote .display-4 {
+    font-size: 2.5rem;
+  }
+  body {
+    padding: 0px;
+  }
+  .fixed-top {
+    position: relative;
+  }
+}
+
+/* Acordion */
+.itemDivider {
+  border-top: 1px solid rgba(0, 0, 0, .08);
+  padding: 0.5rem 0px;
+}
+
+
+/* Page Plans */
+.list-plan li + li {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+.list-plan li {
+  padding: 1rem;
+}
+
+.text-primary {
+  color: #00db9d !important;
+}
